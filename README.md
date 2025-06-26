@@ -1,7 +1,6 @@
 # Interactive Cinderella Story
 
-![Project Preview](https://img.shields.io/badge/Interactive-Storytelling-blueviolet) 
-![Tech Stack](https://img.shields.io/badge/HTML-CSS-JavaScript-yellowgreen)
+
 
 A choose-your-own-adventure version of the classic Cinderella fairy tale with multiple branching paths and endings, built with pure HTML, CSS, and JavaScript.
 
