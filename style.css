@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #fff5f5;
+    color: #333;
+    background-image: url('castle-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.story-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #f8c8dc;
+}
+
+.story-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.story-header h1 {
+    color: #d23669;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.character-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.character {
+    height: 150px;
+    transition: all 0.3s ease;
+}
+
+.character:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.story-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    border: 1px solid #f8c8dc;
+}
+
+.choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.choice-btn {
+    background-color: #d23669;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.choice-btn:hover {
+    background-color: #a51a4a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.control-btn {
+    background-color: #f8c8dc;
+    color: #333;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.control-btn:hover {
+    background-color: #d23669;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Animation for story transitions */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.story-content, .choices-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .story-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .story-header h1 {
+        font-size: 2rem;
+    }
+    
+    .character {
+        height: 100px;
+    }
+    
+    .story-content {
+        font-size: 1rem;
+        padding: 15px;
+        min-height: 150px;
+    }
+    
+    .choice-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .control-btn {
+        width: 80%;
+    }
+}

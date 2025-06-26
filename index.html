@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cinderella Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="story-container">
+        <div class="story-header">
+            <h1>Cinderella's Magical Adventure</h1>
+            <div class="character-images">
+                <img src="cinderella.png" alt="Cinderella" class="character">
+                <img src="fairy-godmother.png" alt="Fairy Godmother" class="character">
+            </div>
+        </div>
+        
+        <div class="story-content" id="story-content">
+            <!-- Content will be dynamically inserted here by JavaScript -->
+        </div>
+        
+        <div class="choices-container" id="choices-container">
+            <!-- Choice buttons will be dynamically inserted here by JavaScript -->
+        </div>
+        
+        <div class="controls">
+            <button id="restart-btn" class="control-btn">Start Over</button>
+            <button id="back-btn" class="control-btn">Go Back</button>
+            <button id="mute-btn" class="control-btn">🔊</button>
+        </div>
+    </div>
+    
+    <audio id="background-music" loop>
+        <source src="magical-music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="click-sound">
+        <source src="magic-wand.wav" type="audio/wav">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
